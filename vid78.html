@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //forming class
+    class person{
+        constructor(name , id) {
+            this.name = name
+            this.id = id
+        }
+
+        detail() {
+            console.log("Your name is "+this.name+" and your id is "+this.id)
+        }
+    }
+    //forming object of class
+    const obj1 = new person("Mehwish" , "1")
+    // obj1.detail()
+
+    //inheritance
+
+    class student extends person {
+        constructor(name , id , rollno) {
+            super(name , id)
+            this._rollno = rollno
+        }
+        detail() {
+            super.detail()
+            console.log("Your roll number is "+this.rollno)
+        }
+    }
+    const obj2 = new student("Mehwish" ,"1" , "23K-0773")
+    console.log(obj2.name)
+    console.log(obj2._rollno)
+    // obj2.detail()
+</script>
+</html>

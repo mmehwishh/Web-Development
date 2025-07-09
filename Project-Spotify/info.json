@@ -1,0 +1,69 @@
+{
+  "title": "Karbala Nohas Collection",
+  "description": "A beautiful noha playlist for Muharram.",
+  "artists": [
+    {
+      "name": "Nadeem Sarwar",
+      "songs": [
+        {
+          "title": "Bus Ya Hussain",
+          "file": "bus_ya_hussain.mp3",
+          "cover": "bus_ya_hussain.jpg",
+          "artist": "Nadeem Sarwar"
+        },
+        {
+          "title": "Chaly Ao Aye Zawwaron",
+          "file": "chaly_ao_aye_zawwaron.mp3",
+          "cover": "chaly_ao_aye_zawwaron.jpg",
+          "artist": "Nadeem Sarwar"
+        },
+        {
+          "title": "Karbala Mashallah",
+          "file": "karbala_mashallah.mp3",
+          "cover": "karbala_mashallah.jpg",
+          "artist": "Nadeem Sarwar"
+        },
+        {
+          "title": "Zamana Tmhara Ya Hussain",
+          "file": "zamana_tmahara_ya_hussain.mp3",
+          "cover": "zamana_tmahara_ya_hussain.jpg",
+          "artist": "Nadeem Sarwar"
+        }
+      ]
+    },
+    {
+      "name": "Mir Hasan Mir",
+      "songs": [
+        {
+          "title": "Bus Ya Hussain",
+          "file": "bus_ya_hussain.mp3",
+          "cover": "bus_ya_hussain.jpg",
+          "artist": "Mir Hasan Mir"
+        },
+        {
+          "title": "Ali Ali Maula",
+          "file": "ali_ali_maula.mp3",
+          "cover": "ali_ali_maula.jpg",
+          "artist": "Mir Hasan Mir"
+        }
+      ]
+    },
+    {
+      "name": "Farhan Ali Waris",
+      "songs": [
+        {
+          "title": "Labbaik Ya Hussain",
+          "file": "labbaik_ya_hussain.mp3",
+          "cover": "labbaik_ya_hussain.jpg",
+          "artist": "Farhan Ali Waris"
+        },
+        {
+          "title": "Ali Ali Maula",
+          "file": "ali_ali_maula.mp3",
+          "cover": "ali_ali_maula.jpg",
+          "artist": "Farhan Ali Waris"
+        }
+      ]
+    }
+  ]
+}

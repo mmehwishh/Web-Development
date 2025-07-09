@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fjalla+One&family=Gravitas+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI';
+        font-optical-sizing: auto;
+
+        font-style: normal;
+    }
+
+
+
+    .nav {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 13px;
+        cursor: pointer;
+    }
+
+
+    button {
+        font-family: 'Segoe UI';
+        font-optical-sizing: auto;
+        border: 2px solid black;
+        font-size: larger;
+        font-weight: bolder;
+        font-style: normal;
+        padding: 9px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .side ul li img {
+
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo img {
+        height: 72px;
+        width: 1 72px;
+
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: 23px;
+    }
+
+    li {
+        list-style: none;
+
+
+    }
+
+    .tabs ul li img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .grid-container {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 305px 305px 305px;
+        grid-template-rows: 280px 280px 280px 280px;
+        gap: 34px;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .internal_box {
+        width: 302px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+    }
+
+    .bold,
+    .lang,
+    .button,
+    .shah,
+    .text {
+        text-align: center;
+        margin: 0px;
+        width: 220px;
+        height: 30px;
+        background-color: #f9f9f9;
+
+    }
+
+    .button {
+        height: 60px;
+    }
+
+    .button button {
+        background-color: #5DC264;
+        border: 0px;
+        border-radius: 10px;
+        width: 150px;
+        font-size: small;
+        color: white;
+    }
+
+    .shah,
+    .lang {
+        font-size: x-small;
+    }
+
+    .text {
+        font-size: xx-small;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word
+    }
+
+    @media screen and (max-width: 945px) {
+        .grid-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .internal_box {
+            width: 302px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        li {
+            padding: 5px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="nav">
+
+            <div class="logo">
+                <img src="ulogo.png" alt="">
+            </div>
+
+            <div class="tabs">
+                <ul>
+                    <li>Product <img src="down.png" alt=""></li>
+                    <li>Pricing <img src="down.png" alt=""></li>
+                    <li>Resources <img src="down.png" alt=""></li>
+                    <li>Our company <img src="down.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="side">
+                <ul>
+                    <li><Button>BUY NOW</Button></li>
+                    <li>
+                        <img src="globe.png" alt="">
+                        English
+                        <img src="search.png" alt="">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="grid-container">
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>English</h3>
+                </div>
+                <div class="lang">
+
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>Deutsch</h3>
+                </div>
+                <div class="lang">
+                    German
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>Italiano</h3>
+                </div>
+                <div class="lang">
+                    Italian
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>Español</h3>
+                </div>
+                <div class="lang">
+                    Spanish
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>français</h3>
+                </div>
+                <div class="lang">
+                    French
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>Português brasileiro</h3>
+                </div>
+                <div class="lang">
+                    Brazilian Portuguese
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>日本</h3>
+                </div>
+                <div class="lang">
+                    Japanese
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>한국어</h3>
+                </div>
+                <div class="lang">
+                    Korean
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>华语</h3>
+                </div>
+                <div class="lang">
+                    Chinese
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+            <div class="internal_box">
+                <div class="bold">
+                    <h3>華語</h3>
+                </div>
+                <div class="lang">
+                    Traditional Chinese
+                </div>
+                <div class="button">
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="shah">SHA256</div>
+                <div class="text">EF9E3D26C32B1264291BC12CB9FD8DFC9DD4C9B9A414D514D6B4144F6664C8DE</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

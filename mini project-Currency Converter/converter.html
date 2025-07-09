@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color:#7B4019;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container{
+        background-color: #FF7D29;
+        width: 70vh;
+        height: 80vh;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        color: white;
+    }
+    form{
+        width: 60vh;
+        height: 50vh;
+        border: 1px solid black;
+        padding: 5px;
+    }
+    form input, button{
+        border: none;
+        margin: 3px;
+        background-color:#FFEEA9;
+        font-size: 1rem;
+        border-radius: 2rem;
+        padding: 0.5rem;
+        width: 90%;
+        font-family: 'Poppins', sans-serif;
+    }
+    .convert{
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        align-items: center;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .convert i{
+        border: 1px solid black;
+    }
+    .dropdown {
+        background-color: #FFEEA9;
+        border: none;
+        border-radius: 0.5rem;
+        display: flex;
+        width: 7rem;
+        height: 3rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .dropdown  select{
+        background-color: #FFEEA9;
+        border: none;
+        width: 3rem;
+        height: 2rem;
+    }
+    .dropdown img{
+        width: 2rem;
+        height: 3rem;
+    }
+    p{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="head">
+                <h2>Currency Converter</h2>
+            </div>
+            <div class="amount">
+                <p>Enter Amount : </p>
+                <input type="text" placeholder="1">
+            </div>
+
+            <div class="convert">
+                <div class="dropdown from">
+                    <img src="https://flagsapi.com/PK/flat/64.png" alt="">
+                    <select name="from" id="" class="select-from" >
+                    </select>
+                </div>
+        
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <div class="dropdown to">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                    <select name="to" id="" class="select-to">
+                    </select>
+                </div>
+            </div>
+
+            <div class="msg">
+                <p>1 PKR = 1 USD</p>
+            </div>
+            <div class="btn">
+                <button>Get Exchange Rate</button>
+            </div>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="converter.js"></script>
+    
+</body>
+</html>

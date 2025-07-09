@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 13</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+
+        .body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .main {
+            background-image: url(flower.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 12px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 280px;
+            height: 300px;
+            border-radius: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            font-size: x-large;
+            color: white;
+        }
+
+        label {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            color: white;
+        }
+
+        input {
+            background-color: rgb(44, 238, 238);
+            margin: 12px;
+            background-color: rgba(0, 0, 0, 0.44);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 120px;
+            text-align: center;
+        }
+
+        button {
+            width: 75px;
+            height: 32px;
+            padding: 13px;
+            background-color: rgb(203, 27, 27);
+            color: white;
+            font-weight: bolder;
+            border-radius: 20px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.44);
+        }
+
+        button:hover {
+            background-color: rgb(36, 5, 5);
+        }
+
+        .container {
+            display: flex;
+            border: 2px solid black;
+            align-items: center;
+            margin: 15px;
+            width: 800px;
+            height: 113px;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 220px;
+            height: 113px;
+        }
+
+        .img {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .time {
+            width: 50px;
+            height: 15px;
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(99, 99, 99);
+            color: white;
+            bottom: 0;
+            left: 164px;
+            border-radius: 2px;
+            text-align: center;
+        }
+
+        .text {
+            width: 725px;
+            height: 113px;
+            padding: 2px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .text h1 {
+
+            font-size: 24px;
+            padding-bottom: 0px;
+            margin-bottom: 0;
+        }
+
+        .text p {
+            font-size: 17px;
+            color: black;
+            font-weight: 100;
+            padding-top: 0px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="img">
+            <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw">
+        </div>
+        <div class="time">
+            33:12
+        </div>
+        <div class="text">
+             <h1>Introduction to Backend | Sigma Web Dev video #2</h1>
+             <p>CodeWithHarry . 12 . 3 months ago</p>
+        </div>
+    </div> -->
+    <div class="main">
+        <p>Want to generate card?</p>
+        <label for="title">Card Title </label>
+        <input type="text" name="" id="title">
+
+        <button id="btn">create</button>
+    </div>
+    <!-- <button id="btn">create</button> -->
+    <script src="quiz13.js"></script>
+</body>
+
+</html>

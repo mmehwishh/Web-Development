@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fjalla+One&family=Gravitas+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+    body {
+        background-color: rgb(6, 37, 6);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <div class="typeBox"></div>
+    <div class="virus"></div>
+</body>
+
+<script>
+    let data = "Hacking in progress..."
+    let dest = document.querySelector(".typeBox")
+    const addChar = (i) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                dest.innerHTML = dest.innerHTML + `${i}`
+                resolve();
+            }, 100)
+        })
+    }
+    const removeChar = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                dest.innerHTML = dest.innerHTML.slice(0, -1)
+                resolve();
+            }, 100)
+        })
+    }
+    const main = async () => {
+
+        while (1) {
+            for (const i of data) {
+                await addChar(i)
+            }
+            for (const i of data) {
+                await removeChar()
+            }
+        }
+
+    }
+    main()
+
+</script>
+
+</html>

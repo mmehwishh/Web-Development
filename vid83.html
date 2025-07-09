@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Question 1</title>
+</head>
+<body>
+    <div class="q1">
+
+    </div>
+</body>
+<script>
+    // let house = ["Gryffindor" , "Hufflepuff" , "Ravenclaw" , "Slytherine"]
+    let stds = ["Shubh", "anjali", "shivani", "shivangi", "annapurna", "shubam", "krishnanedu", "shivesh", "kaif", "emanuel"]
+    let stds_house = []
+    function sort() {
+        for (const element of stds) {
+            if(element.length<6) {
+                stds_house.push("Gryffindor")
+            } else if( element.length<8) {
+                stds_house.push("Hufflepuff")
+            } else if(element.length<12) {
+                stds_house.push("Ravenclaw")
+            } else if(element.length>=12) {
+                stds_house.push("Slytherine")
+            } else {
+                stds_house.push("none")
+            }
+        }
+    }
+    function show() {
+        for(let i =0 ; i<stds.length; i++) {
+            console.log(stds[i] , stds_house[i])
+        }
+    }
+    sort()
+    show()
+</script>
+</html>

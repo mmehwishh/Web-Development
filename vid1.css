@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(220, 220, 73);
+    color: rgb(21, 61, 61);
+}
+td{
+    border: 2px solid black;
+}
+span{
+    background-color: rgb(108, 233, 80);
+}
