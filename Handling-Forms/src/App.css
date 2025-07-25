@@ -1,0 +1,23 @@
+.form{
+  display: flex;
+  background-color: rgb(79, 9, 43);
+  flex-direction: column;
+  width: 50vh;
+  height: max-content;
+  gap: 34px;
+  padding: 12px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.form input {
+  width: 90%;
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+  font-weight: bolder;
+}
+.white{
+  color: white;
+}
